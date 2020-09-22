@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+.App
+{
+    min-height: 100vh;
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search-form
+{
+
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search-bar
+{
+    width: 50%;
+    border: none;
+    padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.search-button
+{
+    background: lightcoral;
+    border: none;
+    padding: 10px 20px;
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.recipes
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Show-box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box-data
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: ivory;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+}
+
+.box-data img
+{
+    width: 800px;
+    height: 600px;
+}
+
+.box-data p
+{
+    font-size: 18px;
+}
+
+.sand
+{
+    display: none;
+}
+
+@media (max-width: 500px)
+{
+    .box-data
+    {
+        width: 80%;
+        padding: 25px;
+    }
+
+    .box-data img
+    {
+        width: 300px;
+        height: 240px;
+    }
+
+    .box-data h1
+    {
+        font-size: 26px;
+    }
+
+    .box-data p
+    {
+        font-size: 16px;
+    }
+
 }
